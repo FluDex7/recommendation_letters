@@ -1,0 +1,155 @@
+% ============================================================
+% Recommendation Letter — Belyaev E.I. (Director of IT Department)
+% Compiler: pdfLaTeX
+% ============================================================
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{tempora}
+
+\usepackage[left=25mm, right=20mm, top=15mm, bottom=20mm]{geometry}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{parskip}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{microtype}
+\usepackage[russian, english]{babel}
+\usepackage{setspace}
+
+\hypersetup{colorlinks=true, urlcolor=blue!70!black, pdfborder={0 0 0}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+
+\begin{document}
+\selectlanguage{russian}
+
+% ---------------------------------------------------------------
+% HEADER (ENGLISH PAGE)
+% ---------------------------------------------------------------
+\noindent
+\begin{minipage}[c]{0.09\textwidth}
+  \includegraphics[width=\textwidth]{../../Images/logo2.jpg}
+\end{minipage}%
+\hfill
+\begin{minipage}[c]{0.9\textwidth}
+  \centering
+  {\fontsize{10}{12}\selectfont МИНИСТЕРСТВО НАУКИ И ВЫСШЕГО ОБРАЗОВАНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ}\\[1pt]
+  {\fontsize{10}{12}\selectfont Федеральное государственное бюджетное образовательное учреждение высшего образования}\\[3pt]
+  {\fontsize{10}{12}\selectfont «КАЗАНСКИЙ ГОСУДАРСТВЕННЫЙ ЭНЕРГЕТИЧЕСКИЙ УНИВЕРСИТЕТ»}\\[1pt]
+  {\fontsize{10.5}{12}\selectfont (ФГБОУ ВО «КГЭУ»)}
+\end{minipage}
+
+\vspace{4pt}
+\noindent\rule{\textwidth}{0.8pt}
+
+% ---------------------------------------------------------------
+% Sender block
+% ---------------------------------------------------------------
+\begin{flushright}
+  \begin{spacing}{0.8}
+    Belyaev Eduard Irekovich\\
+    Director of the IT Department / Associate Professor\\
+    Department of Digital Systems and Models, KSPEU\\[6pt]
+    Date: \rule{4cm}{0.4pt}
+  \end{spacing}
+\end{flushright}
+
+\begin{center}
+  {\Large\bfseries Letter of Recommendation}
+\end{center}
+
+\selectlanguage{english}
+Dear HSE University Admissions Committee,
+
+I recommend Danil Pavlovich Romanov, a~fourth-year student in Applied Mathematics (specialization: Mathematical and Software Support for AI~Systems) at KSPEU, for admission to your Master's program.
+
+I taught Danil the AI Systems Project Practicum and supervised his course project: a~Telegram-based AI assistant for accountants, built on a~Retrieval-Augmented Generation (RAG) architecture. The system was designed for a~real company and automates consultations on the Russian Tax Code.
+
+As part of this project, Danil designed and implemented a~fully functional production-ready system. The technology stack included a~Qdrant vector database for semantic search, OpenAI GPT-4 for response generation, aiogram~3 as the bot framework, PostgreSQL for user and dialog management, and Docker Compose for deployment. The system processes the majority of routine queries in under three seconds, routing only complex cases to a~human specialist.
+
+In addition, within my Mathematical Models for Enterprises course, Danil developed a~queuing theory simulation model of the same consultation process using AnyLogic. He formalized the problem as a~hybrid M/M/c queuing system, conducted comparative experiments between baseline and AI-augmented scenarios, and demonstrated measurable improvements in response time and resource utilization.
+
+What distinguishes Danil among the students I~have supervised is his ability to combine research-level analysis with production-quality software engineering. He approaches each task as a~complete product --- from mathematical formalization through architecture design to containerized deployment.
+
+I strongly recommend him for admission to your Master's program.
+
+\vspace{10pt}
+\noindent Sincerely,
+
+\vspace{15pt}
+\rule{5cm}{0.4pt}\\[4pt]
+\begin{spacing}{0.8}
+  {Belyaev Eduard Irekovich}\\
+  {\small Director of the IT Department / Associate Professor}\\
+  {\small KSPEU | beliaev.ei@yandex.ru}
+\end{spacing}
+
+\clearpage
+
+% ============================================================
+% РУССКАЯ ВЕРСИЯ
+% ============================================================
+\selectlanguage{russian}
+
+\noindent
+\begin{minipage}[c]{0.09\textwidth}
+  \includegraphics[width=\textwidth]{../../Images/logo2.jpg}
+\end{minipage}%
+\hfill
+\begin{minipage}[c]{0.9\textwidth}
+  \centering
+  {\fontsize{10}{12}\selectfont МИНИСТЕРСТВО НАУКИ И ВЫСШЕГО ОБРАЗОВАНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ}\\[1pt]
+  {\fontsize{10}{12}\selectfont Федеральное государственное бюджетное образовательное учреждение высшего образования}\\[3pt]
+  {\fontsize{10}{12}\selectfont «КАЗАНСКИЙ ГОСУДАРСТВЕННЫЙ ЭНЕРГЕТИЧЕСКИЙ УНИВЕРСИТЕТ»}\\[1pt]
+  {\fontsize{10}{12}\selectfont (ФГБОУ ВО «КГЭУ»)}
+\end{minipage}
+
+\vspace{4pt}
+\noindent\rule{\textwidth}{0.8pt}
+
+% ---------------------------------------------------------------
+% Sender block
+% ---------------------------------------------------------------
+\begin{flushright}
+  \begin{spacing}{0.8}
+    Беляев Эдуард Ирекович\\
+    Директор IT-департамента / Доцент\\
+    Кафедра «Цифровые системы и модели», КГЭУ\\[6pt]
+    Дата: \rule{4cm}{0.4pt}
+  \end{spacing}
+\end{flushright}
+
+\begin{center}
+  {\Large\bfseries Рекомендательное письмо}
+\end{center}
+
+В приёмную комиссию НИУ ВШЭ,
+
+Рекомендую Романова Данила Павловича, студента 4-го курса направления 01.03.04 «Прикладная математика» (профиль: ма\-те\-ма\-ти\-че\-ское и про\-грамм\-ное обес\-пе\-че\-ние систем ИИ), для по\-сту\-пле\-ния в ма\-ги\-стра\-ту\-ру.
+
+Я вёл у Данила дисциплину «Проектный практикум по математическому и программному обеспечению систем искусственного интеллекта» и руководил его курсовым проектом: Telegram-ботом --- AI-ассистентом бухгалтера, построенным на архитектуре RAG (Retrieval-Augmented Generation). Система разработана для реального предприятия и автоматизирует консультации по Налоговому кодексу~РФ.
+
+В рамках проекта Данил спроектировал и реализовал полноценную систему, готовую к промышленной эксплуатации. Технологический стек включал векторную базу данных Qdrant для семантического поиска, OpenAI GPT-4 для генерации ответов, aiogram~3 в качестве фреймворка бота, PostgreSQL для управления пользователями и диалогами, а также Docker Compose для развёртывания. Система обрабатывает большинство типовых запросов менее чем за три секунды, направляя только сложные случаи к специалисту.
+
+Кроме того, в рамках моей дисциплины «Математические модели для предприятий» Данил разработал имитационную модель того же консультационного процесса в среде AnyLogic на основе теории массового обслуживания. Он формализовал задачу как гибридную систему M/M/c, провёл сравнительные эксперименты между базовым и AI-усиленным сценариями и продемонстрировал измеримые улучшения по времени отклика и загрузке ресурсов.
+
+Данила отличает от других студентов, которых я курировал, способность сочетать исследовательский анализ с инженерией промышленного уровня. Каждую задачу он доводит до завершённого продукта --- от математической формализации через проектирование архитектуры до контейнеризированного развёртывания.
+
+Рекомендую его к зачислению на магистерскую программу.
+
+\vspace{10pt}
+\noindent С уважением,
+
+\vspace{15pt}
+\rule{5cm}{0.4pt}\\[4pt]
+\begin{spacing}{0.8}
+  {Беляев Эдуард Ирекович}\\
+  {\small Директор IT-департамента / Доцент}\\
+  {\small КГЭУ | beliaev.ei@yandex.ru}
+\end{spacing}
+
+\end{document}
